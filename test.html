@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+  <head>
+    <title> Testing for Derrick</title>
+  </head>
+  <body>
+  
+    <input type="text" name="" id="selected_service_id">
+
+<div id="emp-search-results-window-wrap">
+
+    <ul id="emp-results-wrapper">
+
+          <div class="hsp-category-list">
+
+            <li>
+
+            <div class="hsp-search-results-window">
+
+              <div class="hsp-search-term-list">
+
+                <a href="#" class="emp-options" onClick="changeServiceID('JK00240');">Some thing</a>
+
+              </div>
+
+              </div>  
+
+            </li>
+
+            </div>
+            <div class="hsp-category-list">
+
+            <li>
+
+              <div class="hsp-search-results-window">
+
+                <div class="hsp-search-term-list">
+
+                  <a href="#" class="emp-options" onClick="changeServiceID('JPS0091');">Some other</a>
+
+                </div>
+
+                </div>  
+
+              </li>
+
+            </div>
+          </ul>
+      <script>
+        const changeServiceID = ID => {
+        let selected_service_id = document.getElementById('selected_service_id')
+        selected_service_id.value = ID            
+        }
+
+        /*
+        Older way of doing it.
+        function changeServiceID(ID){
+        let selected_service_id = document.getElementById('selected_service_id')
+        selected_service_id.value = ID            
+        }
+        */
+      </script>
+    </body>
+ </html>
